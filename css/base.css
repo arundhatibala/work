@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight&display=swap');
+
+
+html {
+  scroll-behavior: smooth;
+  cursor: none;
+}
+html, body
+{
+  cursor: none;
+  background-color: rgb(255, 255, 255);
+}
+
+body {
+  font-family: Inter Tight, sans-serif;
+}
+
+/* Navbar stuff / minimal */
+.nav-link {
+  font-family: Inter Tight, sans-serif;
+  color: black;
+}
+
+.nav-link:hover {
+  color: red;
+}
+
+.hero {
+	height: 90vh;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: black;
+}
+
+.title {
+  font-family: Inter Tight, sans-serif;
+  color: black;
+}
+
+.title h1 {
+  font-size: 4rem;
+}
+.title h6 {
+  font-size: 2rem;
+}
+
+
+span {
+  text-decoration: none;
+  color: black;
+}
+
+.proj:hover {
+  color: red;
+}
+
+.projects {
+  padding: 30vh 0;
+  color: black;
+}
+
+.clock {
+	font-family: Inter Tight, sans-serif;
+	color: red;
+}
+
+.highlight {
+  color: red;
+}
+
+.container-fluid {
+  padding: 2vh 2vw;
+}
+
+.diagram {
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+    
+  .color {
+    /* display: none; */
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: dash 5s linear forwards;
+  }
+  
+  
+  @keyframes dash {
+    from {
+      stroke-dashoffset: 1000;
+    }
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+
+  p {
+    padding: 3vh 0;
+  }
+
+  #work {
+    padding: 6vh 0;
+  }
+
+
+  .card {
+    width: 100%;
+    border: none;
+  }
+
+  .row {
+    padding: 3vh 0;
+  }
+
+  /* #circularcursor {
+    background-color: transparent;
+    border:1px solid black;    
+    height:20px;
+    width:20px;
+    border-radius:50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    position: absolute;
+    z-index: 1;
+  } */
+
+
+  /* Page Loader */
+.js .loading::before,
+.js .loading::after {
+	content: '';
+	position: fixed;
+	z-index: 1000;
+}
+
+.js .loading::before {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: var(--color-bg);
+}
+
+.js .loading::after {
+	top: 50%;
+	left: 50%;
+	width: 60px;
+	height: 60px;
+	margin: -30px 0 0 -30px;
+	border-radius: 50%;
+	opacity: 0.4;
+	/* background: var(--color-link); */
+	animation: loaderAnim 0.7s linear infinite alternate forwards;
+}
+
+@keyframes loaderAnim {
+	to {
+		opacity: 1;
+		transform: scale3d(0.5, 0.5, 1);
+	}
+
+}
+
+.hero-img {
+  width: 100%;
+  padding: 2vh 0;
+}
+.hero-img-main {
+  width: 100%;
+  padding: 3vh 0;
+}
+
+p.page {
+  padding: 0;
+}
+
+div.page {
+  padding: 6vh 0;
+}
+
+#myBtn {
+  cursor: none;
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer; /* Add a mouse pointer on hover */
+}
+
+#myBtn:hover {
+  cursor: none;
+  background-color: rgba(0, 0, 0, 0); /* Add a dark-grey background on hover */
+}
+
+.show {
+  animation: fadeIn 2s;
+}
+
+.hide {
+  animation: fadeOut 2s;
+}
+
+@keyframes fadeOut {
+  from {opacity: 1;}
+  to {opacity: 0;}
+}
+  
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+  .inline-image {
+    width: 100%;
+    padding: 2vh 2vw;
+  }
+
+  .active {
+    color: red;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  #myCarousel {
+    padding: 5vh 0;
+  }
+
+#archives {
+  height: 400px;
+  background-color: red;
+}
+
+.archives {
+  padding: 5vh 0;
+}
+
+.bi {
+  font-size: 30px;
+  padding: 1vh 0.5vw;
+  color: red;
+}
+
+a {
+  cursor: none;
+}
+
+.controls {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+img {
+  width: 100%;
+}

@@ -1,0 +1,32 @@
+/* Outer Cursor Circle */
+.cursor--outer {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 1px solid #232323;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    position: fixed;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+  }
+  
+  /* Inner Cursor Circle */
+  .cursor--inner {
+    width: 4px;
+    height: 4px;
+    position: fixed;
+    left: 10px;
+    top: 10px;
+    border-radius: 50%;
+    z-index: 11000;
+    background:#232323;
+  }
+  
+  .link {
+    cursor: none; 
+    transition: coloring 10s ease-in-out;
+  }
