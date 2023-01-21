@@ -1,28 +1,67 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter+Tight&display=swap');
 
+:root {
+  --color-bg: #ededed;
+  --color-text: #171717;
+  --highlight: #DA0037; 
+}
+
+.light-mode {
+  --color-bg: #ededed;
+  --color-text: #171717;
+  animation: fadein2 0.5s linear;
+}
+
+.dark-mode {
+  --color-bg: #171717;
+  --color-text: #EDEDED;
+  animation-name: fadein1;
+  animation-duration: 0.5s;
+}
 
 html {
   scroll-behavior: smooth;
   cursor: none;
+  background-color: var(--color-bg);
 }
+
+@keyframes fadein1 {
+  0% { background-color: #EDEDED; }
+  100%   { background-color: #171717; }
+}
+
+@keyframes fadein2 {
+  0% { background-color: #171717; }
+  100%   { background-color: #EDEDED; }
+}
+
+
 html, body
 {
   cursor: none;
-  background-color: rgb(255, 255, 255);
+  background-color: var(--color-bg)
 }
+
 
 body {
   font-family: Inter Tight, sans-serif;
 }
 
 /* Navbar stuff / minimal */
-.nav-link {
-  font-family: Inter Tight, sans-serif;
-  color: black;
+
+.link {
+  cursor: none;
+  color: var(--highlight);
 }
 
+.nav-link {
+  font-family: Inter Tight, sans-serif;
+  color: var(--color-text)
+}
+
+
 .nav-link:hover {
-  color: red;
+  color: var(--highlight);
 }
 
 .hero {
@@ -31,16 +70,16 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	color: black;
+	color: var(--color-text);
 }
 
 .title {
   font-family: Inter Tight, sans-serif;
-  color: black;
+  color: var(--color-text)
 }
 
 .title h1 {
-  font-size: 4rem;
+  font-size: 3.8rem;
 }
 .title h6 {
   font-size: 2rem;
@@ -49,25 +88,21 @@ body {
 
 span {
   text-decoration: none;
-  color: black;
+  color: var(--color-text)
 }
 
 .proj:hover {
-  color: red;
+  color: var(--highlight);
 }
 
-.projects {
-  padding: 30vh 0;
-  color: black;
-}
 
 .clock {
 	font-family: Inter Tight, sans-serif;
-	color: red;
+	color: var(--highlight);
 }
 
 .highlight {
-  color: red;
+  color: var(--highlight);
 }
 
 .container-fluid {
@@ -100,6 +135,7 @@ span {
 
   p {
     padding: 3vh 0;
+    color: var(--color-text);
   }
 
   #work {
@@ -115,19 +151,6 @@ span {
   .row {
     padding: 3vh 0;
   }
-
-  /* #circularcursor {
-    background-color: transparent;
-    border:1px solid black;    
-    height:20px;
-    width:20px;
-    border-radius:50%;
-    -moz-border-radius:50%;
-    -webkit-border-radius:50%;
-    position: absolute;
-    z-index: 1;
-  } */
-
 
   /* Page Loader */
 .js .loading::before,
@@ -206,24 +229,13 @@ div.page {
   animation: fadeOut 2s;
 }
 
-@keyframes fadeOut {
-  from {opacity: 1;}
-  to {opacity: 0;}
-}
-  
-
-@keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity: 1;}
-}
-
   .inline-image {
     width: 100%;
     padding: 2vh 2vw;
   }
 
   .active {
-    color: red;
+    color: var(--highlight);
   }
 
   a {
@@ -236,7 +248,7 @@ div.page {
 
 #archives {
   height: 400px;
-  background-color: red;
+  background-color: var(--color-bg);
 }
 
 .archives {
@@ -246,7 +258,12 @@ div.page {
 .bi {
   font-size: 30px;
   padding: 1vh 0.5vw;
-  color: red;
+  color: var(--color-text);
+  transition: color 0.2s linear;
+}
+
+.bi:hover {
+  color: var(--highlight)
 }
 
 a {
@@ -261,4 +278,70 @@ a {
 
 img {
   width: 100%;
+}
+
+#about {
+  padding: 5vh 0;
+}
+
+.nav-right {
+  display: flex;
+}
+
+.bi-brightness-high-fill, .bi-moon-fill {
+  color: var(--highlight);
+  padding: 0 2vw;
+}
+
+.venn {
+  fill: var(--color-text);
+}
+.scribble {
+  stroke: var(--highlight);
+}
+
+.footer {
+  background-color: var(--color-bg);
+}
+
+
+button, button:hover, button:active, button:focus {
+  cursor: none;
+  /* cursor: default; */
+}
+
+.btn {
+  cursor: none;
+  color: var(--highlight);
+  stroke: var(--highlight);
+}
+.btn:hover {
+  cursor:none;
+  color: var(--color-bg);
+  background-color: var(var(--highlight))
+}
+
+.btn-work {
+  cursor: none;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  border: none;
+}
+.btn-work:hover {
+  color: var(--highlight);
+}
+
+.tabs {
+  display: block;
+  color: var(--color-text);
+}
+
+.tabs h6 {
+  font-size: 1.5rem;
+  padding-right: 2vw;
+  color: var(--color-text);
+}
+
+.tabs h6:hover {
+  color: var(--highlight);
 }

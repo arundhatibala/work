@@ -1,13 +1,15 @@
 function showTime(){
+    var element = document.getElementById("toggle");
     var date = new Date();
     var h = date.getHours(); // 0 - 23
     var m = date.getMinutes(); // 0 - 59
     var s = date.getSeconds(); // 0 - 59
     var session = "AM";
+
+
     
     if(h == 0){
         h = 12;
-        session = "AM"
     }
 
     else if(h > 12){
@@ -15,7 +17,7 @@ function showTime(){
         session = "PM";
     }
     else if(h == 12) {
-        session = "PM"
+        session = "PM";
     }
     else {}
     
@@ -31,9 +33,28 @@ function showTime(){
 
     document.getElementById("MyClockMessage").innerTest = message;
     document.getElementById("MyClockMessage").textContent = message;
-    
+
     setTimeout(showTime, 1000);
     
 }
 
 showTime();
+
+function toggleMode() {
+    var element = document.getElementById("body");
+    var el = document.getElementById("toggle");
+    if(element.classList.contains('dark-mode')){
+        //change body to light mode
+    element.classList.add('light-mode')
+    element.classList.remove('dark-mode')
+    el.classList.add("bi-moon-fill");
+    el.classList.remove("bi-brightness-high");
+    }
+    else {
+        //change body to dark mode
+        element.classList.add('dark-mode')
+        element.classList.remove('light-mode')
+        el.classList.add("bi-brightness-high");
+        el.classList.remove("bi-moon-fill");
+    }
+}

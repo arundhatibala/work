@@ -1,9 +1,27 @@
 /* Outer Cursor Circle */
+:root {
+  --color-bg: #fff;
+  --color-text: #000;
+  --highlight: #ff0000; 
+}
+
+.light-mode {
+  --color-bg: #fff;
+  --color-text: #000;
+  --highlight: #ff0000; 
+}
+
+.dark-mode {
+  --color-bg: #171717;
+  --color-text: #EDEDED;
+  --highlight: #DA0037; 
+}
+
 .cursor--outer {
     width: 24px;
     height: 24px;
     border-radius: 50%;
-    border: 1px solid #232323;
+    border: 1px solid var(--color-text);
     display: flex;
     align-items: center;
     justify-content: center;
