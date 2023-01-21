@@ -8,7 +8,7 @@ var linkList = []
     
     function generateLinks() {
       linkList = document.getElementsByClassName("link")
-      console.log(linkList)
+      // console.log(linkList)
     }
 
 var initCursor = function() {

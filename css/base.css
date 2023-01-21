@@ -34,6 +34,10 @@ html {
   0% { background-color: #171717; }
   100%   { background-color: #EDEDED; }
 }
+@keyframes fadein {
+  0% { opacity: 0; }
+  100%   { opacity: 1; }
+}
 
 
 html, body
@@ -70,6 +74,20 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	color: var(--color-text);
+}
+
+li {
+  list-style: none;
+}
+
+.w-hero {
+	/* height: 90vh; */
+  padding: 10vh 5vw;
+	text-align: left;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
 	color: var(--color-text);
 }
 
@@ -344,4 +362,44 @@ button, button:hover, button:active, button:focus {
 
 .tabs h6:hover {
   color: var(--highlight);
+}
+
+.project {
+  padding: 3vh 0;
+  z-index: 999;
+}
+
+.project h1 {
+  width: fit-content;
+  color: var(--color-text);
+  padding: 0 0;
+  transition: color 0.25s linear;
+}
+
+.project h1:hover {
+  color: var(--highlight);
+}
+
+.project h6 {
+  color : var(--color-text);
+}
+
+#archives {
+  color: var(--color-text);
+}
+
+#project-image {
+  top: 50%;
+  left: 70%;
+  height: 30px;
+  width: 100px;
+  /* transform: translate(-10%, -50%); */
+  background-color: pink;
+  position:fixed;
+  z-index: 0;
+  display: none;
+}
+
+.filler {
+  height: 50vh;
 }
