@@ -389,10 +389,10 @@ button, button:hover, button:active, button:focus {
 }
 
 #project-image {
-  top: 50%;
-  left: 70%;
-  height: 30px;
-  width: 100px;
+  top: 20%;
+  left: 50%;
+  /* height: px; */
+  width: 400px;
   /* transform: translate(-10%, -50%); */
   background-color: pink;
   position:fixed;
@@ -402,4 +402,8 @@ button, button:hover, button:active, button:focus {
 
 .filler {
   height: 50vh;
+}
+
+h2 {
+  padding: 5px;
 }

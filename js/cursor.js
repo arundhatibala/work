@@ -1,7 +1,15 @@
 // set the starting position of the cursor outside of the screen
 var clientX = -300,
     clientY = -300
-var linkList = []
+var linkList = [];
+var h = window.innerHeight;
+var w = window.innerWidth;
+
+if (w<'768px') {
+  document.querySelector(".cursor--outer").style.display = "none";
+  // document.querySelector(".cursor--inner").style.display = "none";
+}
+
 // elements 
     outerCursor = document.querySelector(".cursor--outer")
     // innerCursor = document.querySelector(".cursor--inner"),
@@ -22,7 +30,7 @@ var initCursor = function() {
     TweenMax.set(outerCursor, {
       x: clientX,
       y: clientY,
-      delay: .08,
+      delay: .02,
       ease: Power1.easeOut
     });
     
