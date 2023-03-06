@@ -91,6 +91,11 @@ li {
 	color: var(--color-text);
 }
 
+h1 {
+  padding: 2vh 0;
+  color: var(--color-text);
+}
+
 .title {
   font-family: Inter Tight, sans-serif;
   color: var(--color-text)
@@ -240,11 +245,11 @@ div.page {
 }
 
 .show {
-  animation: fadeIn 2s;
+  animation: fadeIn 3s;
 }
 
 .hide {
-  animation: fadeOut 2s;
+  animation: fadeOut 3s;
 }
 
   .inline-image {
@@ -404,6 +409,41 @@ button, button:hover, button:active, button:focus {
   height: 50vh;
 }
 
+.filler2 {
+  height: 10vh;
+}
+
 h2 {
   padding: 5px;
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(50vh, 1fr));
+}
+
+.grid > div {
+  height: auto;
+  /* background: red; */
+}
+
+h6 {
+  padding: 2vh 0;
+  color: var(--color-text);
+}
+
+h6.tag {
+  padding: 1vh 1vw;
+  border: var(--highlight);
+  border-width: 1px;
+  width: fit-content;
+  font-size: small;
+  border-radius: 200px;
+  color: var(--highlight);
+  border-style:solid;
+}
+
+h4, h5 {
+  color: var(--color-text);
 }
