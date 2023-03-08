@@ -130,6 +130,7 @@ span {
 
 .container-fluid {
   padding: 2vh 2vw;
+  display: inline-flex;
 }
 
 .diagram {
@@ -268,11 +269,6 @@ div.page {
   #myCarousel {
     padding: 5vh 0;
   }
-
-/* #archives {
-  height: 400px;
-  background-color: var(--color-bg);
-} */
 
 .archives {
   padding: 5vh 0;
@@ -600,4 +596,17 @@ div.card-body {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
+}
+
+.filler3 {
+  height: 5vh;
+}
+
+.d-flex {
+  display: flex;
+  justify-content: center;
+}
+
+ol {
+  list-style: decimal;
 }

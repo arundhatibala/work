@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/cursor.css">
+    <link rel="stylesheet" href="css/progress.css">
+    <title>E-Lert - Arundhati Bala</title>
+</head>
+<body id = "body" class = "">
+    <div class="cursor cursor--outer"></div>
+    <div class="header">
+        <div class="progress-container">
+          <div class="progress-bar" id="myBar"></div>
+        </div>  
+      </div>    
+      <!-- Content -->
+      <div class ="navbar container-fluid">
+          <a href ="https://arundhatibala.github.io">
+          <div  id="MyClockMessage" class="clock me-auto link" onload="showTime()">
+          </div></a>
+          <div class = "ms-auto nav-right">
+              <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
+              <i id= "toggle" class="ms-auto bi-moon-fill link" onclick="toggleMode()"></i>
+      </div>
+    </div>
+    <div class = "filler3"></div>
+    <div class = "container-fluid">
+        <div class = "me-auto"> 
+            <a class = "me-auto" href = "https://arundhatibala.github.io/work/nomad"><h5 class = "link"><i class = "bi-arrow-left"></i> <span>Nomad Hotels</span></h5></a>
+        </div>
+        <div class = "ms-auto nav-right">
+            <a class = "ms-auto" href = "https://arundhatibala.github.io/work/nomad"><h5 class = "link"> <span>Ztocks </span><i class = "bi-arrow-right"></i></h5></a>
+        </div>
+    </div>
+    <div class = "container-md d-flex title">
+        <h1>E-Lert</h1>
+    </div>
+    <div class = "container-md">
+    <div class = "row">
+        <div class = "col-md-6">
+            <h5 class ="highlight">The Brief</h5>
+            <p>Design a technology-based Ebola survivor observation system that can be deployed in Guinea, Liberia, and/or Sierra Leone. 
+            <br>
+            This system should take into account current contact tracking and surveillance methods used during the Ebola outbreak as well as current methods used to track and monitor survivors. When designing your solution consider the local health infrastructure, access to technology, and the local context. </p>
+        </div>
+        <div class = "col-md-6">
+            <h5 class ="highlight">Notes</h5>
+            <p>This was a group project in which I was the team lead. The other team members were Hannah Davies (Belgium),  Abhi Jha (Nepal), Nancy Moses (Tanzania), Ella Barber (UK), and Toluwalase Lajide (Nigeria). Our mentor was Raga Krishnakumar, a molecular and computational biologist.
+                <br>
+                This project was developed as part of the Public Health Challenge posed by The New York Academy of Sciences. For this, we were placed as finalists in this challenge.
+                <br>
+                I received the Innovator of the Year Award from my high school for the project.</p>
+        </div>
+    </div>
+    <img src = "media/projects/elert/brainstorming.png">
+    <div class = "row">
+        <div class = "col-md-6">
+            <img src = "media/projects/elert/rejection.png">
+        </div>
+        <div class = "col-md-6">
+            <h5 class = "highlight">Research Questions</h5>
+            <ul start = 1>
+                <li>What symptoms set Ebola apart from the rest of the diseases? </li>
+                <li> are these symptoms monitored in these survivors? </li>
+                <li>Can we create an elegant and scalable product using simple technology to track these manifestations?</li>
+                <li>How do we prevent the illness from reaching the healthcare workers?</li>
+            </ul>
+            <img style = "padding-top: 5vh;" src = "media/projects/elert/requirements.png">
+        </div>
+    </div>
+    <div class = "row">
+        <div class = "col-md-6">
+            <h5 class = "highlight">Algorithm</h5>
+            E-lert is switched on by pressing the button. The LED will glow green for 2 seconds. 
+            <br><br>
+            For the next 3 days, temperature is taken as input every 2 hours. It then runs a loop which stores the sum of temperatures taken in a variable. 
+            <br><br>
+            Once the 72 hours are completed, the baseline temperature is established as the sum over the number of times temperature was taken. 
+            <br><br>
+            From then onwards, temperature is checked every 6 hours. If the temperature varies by 3+ degrees, the button will glow, thus alerting the user to check for ocular symptoms. If is it is not varying from the baseline temperature, it returns to the temperature loop from where it came. 
+            <br><br>
+            In case the button is pressed, thus indicating to the wearable that the user is facing ocular symptoms, for the next 48 hours, it will check if the temperature varies by 3+ degrees. If it does, the user will be alerted by the flickering(white) of the button. If not, it returns to the temperature loop from where it came. 
+            <br><br>
+            A combination of the button being pressed and varying temperature will alert the user(button flickers) that they need to visit a doctor. 
+            <br><br>
+            If the battery is low, it will signal the user by changing the colour of the button to red (using multi-coloured LEDs)
+        </div>
+        <div class = "col-md-6">
+            <img src = "media/projects/elert/flowchart.png">
+        </div>
+    </div>
+    <div class = "row">
+        <div class = "col-md-6">
+            <img src="media/projects/elert/sketch.png" alt="">
+        </div>
+        <div class = "col-md-6">
+            <img src="media/projects/elert/renders.png" alt="">
+        </div>
+    </div>
+    <div class = "row">
+        <div class = "col-md-6">
+            <h5 class = "highlight">Features</h5>
+            <p>
+                It is a smart tracker in the form of a wristband that tracks the ocular manifestations along with fever, as our research show that a combination of ocular symptoms and unusually high fever may be a re-emergence of EVD in the survivor.
+                <br><br>
+                Made of water-resistant material, so that the user can wear it all the time. 
+                <br><br>
+                Multi-coloured LED light backlights as a button. 
+                <br><br>
+                Made of elastomer(without latex) material 
+                <br><br>
+                Thermistor Temperature sensors (inexpensive) 
+                <br><br>
+                Arduino Micro-controller to calibrate the thermistor to the human body temperature range.
+                <br><br>
+                Stainless steel clasps to ensure that it is tightly clutching the wrist
+                <br><br>
+                Simple wristband design with only one button.
+            </p>
+        </div>
+        <div class = "col-md-6">
+            <h5 class = "highlight">Advantages</h5>
+            <p>
+                Prevents unnecessary contact between survivors and healthcare workers. Thus, saving the time of healthcare workers and preventing the disease from spreading from patients to survivors at EVD clinics.
+                <br><br>Comfortable(elastomer) and convenient to use.
+                <br><br>Accurate to two decimal places.
+                <br><br>Tracks symptoms of ebola and alerts the survivors on time.
+            </p>
+        </div>
+    </div>
+    </div>
+
+    <!-- Script -->
+    <script src = https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <!-- <script src="js/projects.js"></script> -->
+    <script src="js/clock.js"></script>
+    <script src = "js/progress.js"></script>
+    <script src = "js/cursor.js"></script>
+    <!-- Script -->
+
+</body>
+</html>
