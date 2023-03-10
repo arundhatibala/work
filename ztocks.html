@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/cursor.css">
+    <link rel="stylesheet" href="css/progress.css">
+    <title>E-Lert - Arundhati Bala</title>
+</head>
+<body id = "body" class = "">
+    <div class="cursor cursor--outer"></div>
+    <div class="header">
+        <div class="progress-container">
+          <div class="progress-bar" id="myBar"></div>
+        </div>  
+      </div>    
+      <!-- Content -->
+      <div class ="navbar container-fluid">
+          <a href ="https://arundhatibala.github.io">
+          <div  id="MyClockMessage" class="clock me-auto link" onload="showTime()">
+          </div></a>
+          <div class = "ms-auto nav-right">
+              <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
+              <i id= "toggle" class="ms-auto bi-moon-fill link" onclick="toggleMode()"></i>
+      </div>
+    </div>
+    <div class = "filler3"></div>
+    <div class = "container-fluid">
+        <div class = "me-auto"> 
+            <a class = "me-auto" href = "https://arundhatibala.github.io/work/elert"><h5 class = "link"><i class = "bi-arrow-left"></i> <span>E-Lert</span></h5></a>
+        </div>
+        <div class = "ms-auto nav-right">
+            <a class = "ms-auto" href = "https://arundhatibala.github.io/work/partition"><h5 class = "link"> <span>Partition Mapping </span><i class = "bi-arrow-right"></i></h5></a>
+        </div>
+    </div>
+    <div class = "container-md d-flex title">
+        <h1>Ztocks</h1>
+    </div>
+    <div class = "container-md">
+    <div class = "row">
+        <div>
+            <h5 class ="highlight">The Brief</h5>
+            <p>Design a mobile platform where teenager users learn about the stock market and are made to understand the basics of trading, practically.
+                <br>
+                This platform is supposed to work like Duolingo, but instead of learning a new language, they learn about the Stock Market. Once they reach a certain level in the product, they are allowed to invest real money and trade stocks based on their learning on the platform.</p>
+        </div>
+    </div>
+    <h3>Research</h3>
+    <div class = "row">
+        <div class = "col-md-6">
+            <h5 class = "highlight">Identifying the Problems</h5>
+            <p>
+                1. Most users don’t know the ABCs of the stock market <br>
+                2. How do we ensure that the user does not get bored? <br>
+                3. How do users get real-life experience with the stock market without any consequences?
+            </p>
+        </div>
+        <div class = "col-md-6">
+            <h5 class = "highlight">Wireframing</h5>
+            <p>
+                The basic screens would include onboarding, homepages, target practice, and a user profile.
+                <br>
+                An extension of these would include  intros and questions for the modules, portfolio, charts and a modification page for target practice and a sign up/login page for the user.
+                </p>
+    </div>
+    </div>
+    <img src = "media/projects/ztocks/wireframing.png">
+    <div class = "filler3"></div>
+    <div>
+        <h5 class = "highlight">User Journey Map</h5>
+        <p>
+            I kept it simple, with few options and an easy interface so the priority is to learn about finance, not the interface itself.
+        </p>
+        <div class = "filler3"></div>
+        <img src = "media/projects/ztocks/userjourney.png">
+        <div class = "filler3"></div>
+        <div class = "filler3"></div>
+        <h5 class = "highlight">User Persona</h5>
+        <p>
+            I created a persona for the user, keeping in mind the age group and the target audience.
+        </p>
+        <img src = "media/projects/ztocks/persona.png">
+        <div class = "filler3"></div>
+    </div>
+    <div>
+    <h3>Development</h3>
+    <div class ="filler3"></div>
+    <h5 class ="highlight">Visual Design</h5>
+    <div class = "row">
+        <div class = "col-md-6 imgcol">
+            <h6>Colour Scheme</h6>
+            <img src = "media/projects/ztocks/colour.png">
+            <p>
+                Colourful, dynamic and fun to remind the user that it is, after all, a game application and not a study one.            </p>
+            <div class = "filler3"></div>
+            <h6>Illustrations</h6>
+            <img src = "media/projects/ztocks/illustrations.png">
+            <p>Illustrations are fun and relevant. Attributed to Matilda pack by getillustrations.com</p>
+            </div>
+        <div class = "col-md-6 imgcol">
+            <h6>Logo</h6>
+            <img src = "media/projects/ztocks/logo.png">
+            <p>Two half arrows (representing the ups and downs of the market) combined to form a Z, for GenZ.</p>
+            <div class = "filler3">
+            </div>
+            <h6>Font</h6>
+            <img src = "media/projects/ztocks/font.png">
+            <p>I designed this app for an iOS system , so it employs SF Pro Display for titles and SF Pro text for content.</p>
+        </div>
+    </div>
+    <div class = "filler3"></div>
+    <h5 class = "highlight">Interface Iterations</h5>
+    <h6>Version 1, 2021</h6>
+    <p>This version employed more focus on the playability of the prototype rather than usability. The colours do not offer much contrast and the interface looks ancient in hindsight. Images are not dynamic, but the screens were extensively designed for every possible iteration of user choices. It provided invaluable information and ideas for the second version. After all, we are nothing if we cannot learn from our mistakes.</p>
+    <img src = "media/projects/ztocks/original.png">
+    <!-- <div class = "filler3"></div> -->
+    <p>The Figma file can be found <a class = "link" href = "https://www.figma.com/file/ZRyI6tOcZtxYSOENxrxnxV/Ztocks-Hi-Fi?node-id=28%3A961&t=Gg4EOffyhNojmrfg-1">here.</a></p>
+    </div>
+    <div>
+        <h3>Final Product</h3>
+        <p>In this version, I used a clean but colourful interfaces that better highlighted the gamification within the app. Bright colours make it fun for the younger generation and the high contrast is better at capturing and keeping the user’s attention. </p>
+        <div class = "row">
+            <div class = "col-3">
+                <img src = "media/projects/ztocks/1.png">
+                <p class = "caption">Onboarding ensures no time is spent trying to figure out the use cases of the app.</p>
+            </div>
+            <div class = "col-3">
+                <img src = "media/projects/ztocks/2.png">
+                <p class = "caption">Sign up with several options to allow ease of access for the app.</p>
+            </div>
+            <div class = "col-3">
+                <img src = "media/projects/ztocks/3.png">
+                <p class = "caption">Enough “whitespace” so nothing is accidentally clicked in the modules.
+                    Ensures satisfaction from the reward system.</p>
+            </div>
+            <div class = "col-3">
+                <img src = "media/projects/ztocks/4.png">
+                <p class = "caption">Different colours for completed, incomplete and unattempted modules for clarity of the user.</p>
+            </div>
+        </div>
+        <div class = "row">
+            <div class = "col-3">
+                <img src = "media/projects/ztocks/5.png">
+                <p class = "caption">Intros to modules provide an overview of exactly what they’ll be getting into before they begin.</p>
+            </div>
+            <div class = "col-3">
+                <img src = "media/projects/ztocks/6.png">
+                <p class = "caption">Leaderboards, bios and and country flags promote social learning.</p>
+            </div>
+            <div class = "col-3">
+                <img src = "media/projects/ztocks/7.png">
+                <p class = "caption">View your portfolio in target practice and see how many points the user earned/lost</p>
+            </div>
+            <div class = "col-3">
+                <img src = "media/projects/ztocks/8.png">
+                <p class = "caption">View graphs at higher levels so the user may do a more extensive analysis</p>
+            </div>
+        </div>
+        <h5 class = "highlight">Branding</h5>
+        <div class = "row">
+            <div class = "col">
+                <img src = "media/projects/ztocks/card.png">
+                <div class = "filler3"></div>
+                <img src = "media/projects/ztocks/ad.png">
+            </div>
+            <div class = "col">
+                <img src = "media/projects/ztocks/tee.png">
+                <div class = "filler3"></div>
+                <img src = "media/projects/ztocks/book.png">
+        </div>
+    </div>
+    </div>
+    </div>
+    <div class = "filler3"></div>
+    <div class = "container-fluid">
+        <div class = "me-auto"> 
+            <a class = "me-auto" href = "https://arundhatibala.github.io/work/elert"><h5 class = "link"><i class = "bi-arrow-left"></i> <span>E-Lert</span></h5></a>
+        </div>
+        <div class = "ms-auto nav-right">
+            <a class = "ms-auto" href = "https://arundhatibala.github.io/work/partition"><h5 class = "link"> <span>Partition Mapping </span><i class = "bi-arrow-right"></i></h5></a>
+        </div>
+        <div class = "filler2"></div>
+
+    </div>
+
+    <!-- Script -->
+    <script src = https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <!-- <script src="js/projects.js"></script> -->
+    <script src="js/clock.js"></script>
+    <script src = "js/progress.js"></script>
+    <script src = "js/cursor.js"></script>
+    <!-- Script -->
+
+</body>
+</html>

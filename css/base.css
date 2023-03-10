@@ -91,6 +91,10 @@ li {
 	color: var(--color-text);
 }
 
+h1, h2, h3, h4, h5, h6, p {
+  color: var(--color-text);
+}
+
 h1 {
   padding: 2vh 0;
   color: var(--color-text);
@@ -609,4 +613,12 @@ div.card-body {
 
 ol {
   list-style: decimal;
+}
+
+.imgcol {
+  padding: 0 5vw;
+}
+
+.caption {
+  font-size: small;
 }
