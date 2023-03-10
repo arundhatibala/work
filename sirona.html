@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/cursor.css">
+    <link rel="stylesheet" href="css/progress.css">
+    <title>Sirona - Arundhati Bala</title>
+</head>
+<body id = "body" class = "">
+    <div class="cursor cursor--outer"></div>
+    <div class="header">
+        <div class="progress-container">
+          <div class="progress-bar" id="myBar"></div>
+        </div>  
+      </div>    
+      <!-- Content -->
+      <div class ="navbar container-fluid">
+          <a href ="https://arundhatibala.github.io">
+          <div  id="MyClockMessage" class="clock me-auto link" onload="showTime()">
+          </div></a>
+          <div class = "ms-auto nav-right">
+              <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
+              <i id= "toggle" class="ms-auto bi-moon-fill link" onclick="toggleMode()"></i>
+      </div>
+    </div>
+    <div class = "filler3"></div>
+    <div class = "container-fluid">
+        <div class = "me-auto"> 
+            <a class = "me-auto" href = "https://arundhatibala.github.io/work/partition"><h5 class = "link"><i class = "bi-arrow-left"></i> <span>Partition Mapping</span></h5></a>
+        </div>
+        <div class = "ms-auto nav-right">
+            <a class = "ms-auto" href = "https://arundhatibala.github.io/work/goodreads"><h5 class = "link"> <span>Goodreads </span><i class = "bi-arrow-right"></i></h5></a>
+        </div>
+    </div>
+    <div class = "container-md d-flex title">
+        <h1>Sirona Healthcare</h1>
+    </div>
+    <div class = "container-md">
+    <div class = "row">
+        <div class = "col-md-6">
+            <h5 class ="highlight">The Brief</h5>
+            <p>Decrease the burden on healthcare personnel created by the influx of refugees through streamlining screening and diagnosis of cardiovascular disease (CVD) in detention camps. </p>
+        </div>
+        <div class = "col-md-6">
+            <h5 class ="highlight">Notes</h5>
+            <p>This was a group project in which I was the team lead. The other team members were Kenton Kwok (Hong Kong), Emir Lise (Turkey), Nicole Chiu (Hong Kong), Fan Yi Ni (China), Lillian Huang (China) and Jerry L (Hong Kong).
+                <br><br>
+                This project was developed and presented at the International Symposium on STEM Education (2019) as members of The University of Hong Kong’s Academy for The Talented.
+                <br><br>
+                I received the Innovator of the Year Award from my high school for the project.</p>
+        </div>
+    </div>
+    <img src = "media/projects/sirona/frames.png">
+    <div class = "filler3"></div>
+    <h5 class = "highlight">The Final Product</h5>
+    <p>Refugees will be screened and be given an individual medical profile, complete with details like country of origin, initial ailments, resting levels of cholesterol, glucose, temperature, pulse and blood oxygen( SpO2). A chatbot will be used to screen these diseases, along with physical devices with sensors.</p>
+    <img src = "media/projects/sirona/brainstorm.png">
+    <div class = "filler3"></div>  
+    <h5 class = "highlight">The Screening Station</h5>
+    <p>The screening station is made of lightweight materials and is designed to be dismantle-able and portable.
+        On entering the camp, the refugees create a medical profile in these screening stations , with the help of the chatbot. This data is stored in the cloud and can be used to determine the overall healthcare facilities and number of personnel in every camp.
+        Every station contains tactile indicators in embossed English and Turkish, as well as circular relief patterns to indicate the order of use for the user.</p>
+        <img src = "media/projects/sirona/render1.png">  
+        <img src = "media/projects/sirona/render2.png">
+        <div class = "filler3"></div>
+        <p>The chatbot is used to guide the user throughout the process so that it requires the minimal intervention of medical personnel.
+
+            With a minimalist UI and the option of choosing between English, Turkish, and Arabic. An additional Kurdish and French setting can be used depending on the location.
+            
+            In addition to tactile indicators and the text on the screen, it also reads out the instructions in the chosen language, for those who are visually-impaired and cannot read braille.
+            <br></p>
+        <div class = "row">
+            <div class = "col-md-6">
+                <img src = "media/projects/sirona/engframe.png">
+            </div>
+            <div class = "col-md-6">
+                <img src = "media/projects/sirona/arabicframe.png">
+            </div>
+        </div>
+        <p>            
+            The data collected will be used to create health profiles aimed to sent to governments for funds, while maintaining the privacy of the patients.
+            
+            After evaluation, the refugees are categorised into high and low risk groups, and then the limited resources shall be prioritised.</p>
+    </div>
+
+    <!-- Script -->
+    <script src = https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <!-- <script src="js/projects.js"></script> -->
+    <script src="js/clock.js"></script>
+    <script src = "js/progress.js"></script>
+    <script src = "js/cursor.js"></script>
+    <!-- Script -->
+
+</body>
+</html>
